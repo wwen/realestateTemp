@@ -9,6 +9,7 @@
    Font
    ------------------------------------------------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 
 /* -------------------------------------------------------------------------
@@ -49,18 +50,21 @@ body {
 .header-container {
 }
 
-.header-container .container {
-	width: 1200px;
-	max-width: 1200px;
-	height: 271px;
+@media (min-width: 1200px) {
+	.header-container .container {
+		width: 1200px;
+		max-width: 1200px;
+		height: 271px;
+	}
 }
 
+
 .admin-bar {
-	width: 50%;
+	width: 527px;
 	float: left;
 }
 
-.admin-bar ul {
+.admin-bar ul, .header-row ul {
     list-style-type: none;
 }
 
@@ -88,12 +92,28 @@ body {
 	font-size: 13px;
 }
 
+@media (max-width: 991px) {
+	.admin-bar {
+		width: 280px;
+	}
+
+	.admin-bar a {
+		font-size: 11px;
+		padding: 0 5px;
+	}
+
+	.admin-bar a:hover {
+		font-size: 11px;
+	}
+}
+
 #search-form {
 	background-color: red;
-	width: 22%;
+	width: 270px;
 	float: right;
 	outline: none;
 	margin-top: 12px;
+	clear: right;
 }
 
 #search-form label {
@@ -101,14 +121,14 @@ body {
 }
 
 #search-form input {
-	width: 86%;
+	width: 236px;
 	background-color: #3c3c3c;
 	border: none;
 	color: #7e7e7e;
 	outline: none;
 	padding: 6px 15px;
 	height: 34px;
-	display: block;
+	display: inline-block;
 	float: left;
 }
 
@@ -121,7 +141,49 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #3c3c3c;
-	width: 14%;
+	width: 34px;
 	height: 34px;
+	display: inline-block;
+}
+
+.header-row {
+	height: 74px;
+}
+
+.header-row .nav {
+	margin-top: 30px;
+}
+
+.menu > li {
 	display: block;
+	float: left;
+	width: auto;
+	margin: 0 5px 0 0;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #202020;
+	display: inline-block;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.menu > li > a > span {
+	display: inline-block;
+	font-size: 13px;
+	font-family: 'Lato', sans-serif;
+	padding: 7px 20px 10px 20px;
+	cursor: pointer;
+	line-height: 17px;
+	font-weight: bold;
+}
+
+.menu li a span:hover {
+	color: #ffffff;
+	background-color: #202020;
+};
+
+.menu > li > ul > li > a {
+	color: red;
 }
