@@ -1,0 +1,127 @@
+@import url("bootstrap.css");
+@import url("bootstrap.css.map");
+@import url("bootstrap-theme.css");
+@import url("bootstrap-theme.css.map");
+@import url("bootstrap-theme.min.css");
+@import url("bootstrap.min.css");
+
+/* -------------------------------------------------------------------------
+   Font
+   ------------------------------------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+
+/* -------------------------------------------------------------------------
+   General Style
+   ------------------------------------------------------------------------- */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	min-width: 320px;
+}
+
+body *{
+	margin: 0px;
+	padding: 0px;
+}
+
+.page {
+	max-width: 1230px;
+	margin: 0px auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+/* -------------------------------------------------------------------------
+   Header Style
+   ------------------------------------------------------------------------- */
+
+body {
+	background-image: url("../image/header-row-bg.gif");
+	background-position: top;
+	background-repeat: repeat-x;
+}
+
+.header-container {
+}
+
+.header-container .container {
+	width: 1200px;
+	max-width: 1200px;
+	height: 271px;
+}
+
+.admin-bar {
+	width: 50%;
+	float: left;
+}
+
+.admin-bar ul {
+    list-style-type: none;
+}
+
+.admin-bar li {
+	display: block;
+	float: left;
+	width: auto;
+	padding: 0 5px 0 0;
+}
+
+.admin-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 53px;
+    border-bottom: 5px solid #202020;
+    padding: 0px 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.admin-bar a:hover {
+	border-bottom: 5px solid #ffffff;
+	color: #6d6a6a;
+	font-size: 13px;
+}
+
+#search-form {
+	background-color: red;
+	width: 22%;
+	float: right;
+	outline: none;
+	margin-top: 12px;
+}
+
+#search-form label {
+	display: none;
+}
+
+#search-form input {
+	width: 86%;
+	background-color: #3c3c3c;
+	border: none;
+	color: #7e7e7e;
+	outline: none;
+	padding: 6px 15px;
+	height: 34px;
+	display: block;
+	float: left;
+}
+
+#search-form .button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	vertical-align: top;
+	background-image: url("../image/search-bar.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #3c3c3c;
+	width: 14%;
+	height: 34px;
+	display: block;
+}
