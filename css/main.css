@@ -64,7 +64,7 @@ body {
 	float: left;
 }
 
-.admin-bar ul, .header-row ul {
+.admin-bar ul, .menu {
     list-style-type: none;
 }
 
@@ -179,11 +179,11 @@ body {
 	font-weight: bold;
 }
 
-.menu li a span:hover {
+.menu > li > a > span:hover {
 	color: #ffffff;
 	background-color: #202020;
 };
 
-.menu > li > ul > li > a {
+.menu li li {
 	color: red;
 }
